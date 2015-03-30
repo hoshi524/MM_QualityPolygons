@@ -65,7 +65,7 @@ public class QualityPolygons {
 			if (validatePoly(plist)) {
 				res.add(getID(plist));
 				for (Point p : plist) {
-					used[p.id]=true;
+					used[p.id] = true;
 				}
 			}
 		}
