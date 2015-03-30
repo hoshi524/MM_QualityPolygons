@@ -619,8 +619,16 @@ public class QualityPolygonsVis {
 		}
 	}
 
+	public QualityPolygonsVis(long seed) {
+		Constructor(Long.toString(seed));
+	}
+
 	// ---------------------------------------------------
 	public QualityPolygonsVis(String seed) {
+		Constructor(seed);
+	}
+
+	private void Constructor(String seed) {
 		//interface for runTest
 		if (vis) {
 			jf = new JFrame();
@@ -639,6 +647,7 @@ public class QualityPolygonsVis {
 				e.printStackTrace();
 			}
 		}
+		System.out.println("seed = " + seed);
 		System.out.println("Score = " + runTest(seed));
 		if (proc != null)
 			try {

@@ -49,7 +49,7 @@ public class QualityPolygons {
 			e.printStackTrace();
 		}
 
-		for (int x = 1000; x > 0 && rest >= 3; x--) {
+		for (int x = 0xffff; x > 0 && rest >= 3; x--) {
 			List<Point> plist = new ArrayList<>();
 			List<Point> use = new ArrayList<>();
 			for (int i = 0; i < NP; i++) {
